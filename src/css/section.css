@@ -1,0 +1,109 @@
+section{
+    display: grid;
+    grid: auto auto / 50px 120px 1fr;
+    align-items: center;
+    margin-top: 30px;
+    padding: 10px;
+}
+section > .iconfont {
+    grid-row: 1;
+    grid-column: 1;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: #66a9a3;
+    border-radius: 50%;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+}
+section > h2 {
+    grid-row: 1;
+    grid-column: 2;
+    font-size: 18px;
+}
+section > hr {
+    grid-row: 1;
+    grid-column: 3;
+    border: none;
+    height: 3px;
+    background: #66a9a3;
+}
+section > .detail{
+    grid-row: 2;
+    grid-column: 2/span2;
+}
+section .icon-list{
+    display: flex;
+    align-items: center;
+}
+section .icon-list .iconfont{
+    font-size: 23px;
+    margin-right: 10px;
+}
+section .skill-bar dt{
+    margin-top: 16px;
+}
+section .skill-bar dd {
+    height: 3px;
+    background: #eaeaea;
+}
+section .skill-bar dd div{
+    height: 100%;
+    background: #66a9a3;
+    margin-top: 10px;
+}
+section .timeline{
+    display: grid;
+    grid: auto auto / 120px 1fr auto;
+    align-items: center;
+}
+section .timeline. date{
+    grid-row: 1;
+    grid-column: 1;
+    margin-top: 15px;
+}
+section .timeline > h3{
+    grid-row: 1;
+    grid-column: 2;
+    margin-top: 15px;
+}
+section .timeline .intro{
+    grid-row: 1;
+    grid-column: 3;
+    color: #666;
+    margin-top: 15px;
+}
+section .timeline .detail{
+    grid-row: 2;
+    grid-column: 2 / span 2;
+    margin-top: 10px;
+}
+
+@media(max-width: 500px){
+    section .timeline{
+        display: grid;
+        grid: auto auto auto / 120px 1fr auto;
+        align-items: center;
+    }
+    section .timeline. date{
+        grid-row: 2;
+        grid-column: 1;
+    }
+    section .timeline > h3{
+        grid-row: 1;
+        grid-column: 1 / span2;
+        margin-top: 15px;
+    }
+    section .timeline .intro{
+        grid-row: 1;
+        grid-column: 3;
+        color: #666;
+        margin-top: 15px;
+    }
+    section .timeline .detail{
+        grid-row: 3;
+        grid-column: 1 / span 3;
+        margin-top: 10px;
+    }
+}

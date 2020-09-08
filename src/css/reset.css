@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    margin-left: 1em;
+}
+li{
+    margin-top: 10px;
+}
+a {
+    color: #999;
+    text-decoration: none;
+    border-bottom: 1px solid;
+}

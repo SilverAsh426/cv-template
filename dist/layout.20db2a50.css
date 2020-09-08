@@ -1,0 +1,40 @@
+body{
+    display: grid;
+    grid: auto auto/1fr 300px 600px 1fr;
+}
+header{
+    background: cornflowerblue;
+    grid-column: 1/span 4;
+    grid-row: 1;
+}
+main{
+    background: white;
+    grid-column: 3;
+    grid-row: 2;
+}
+aside{
+    background: white;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+@media(max-width: 950px){
+    body{
+        grid: auto auto auto/1fr;
+        padding: 0 10px 30px 10px;
+    }
+    header{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    main{
+        grid-column: 1;
+        grid-row: 3;
+    }
+    aside{
+        grid-column: 1;
+        grid-row: 2;
+    }
+}
+
+/*# sourceMappingURL=/layout.20db2a50.css.map */
